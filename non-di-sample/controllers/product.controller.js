@@ -9,9 +9,11 @@ export class ProductController {
         const productService = new ProductService();
         const isSoldout = productService.checkSoldout();
 
-        if(hasMoney && !isSoldout) {
-            res.send('buyProduct api success');
+        if (hasMoney && !isSoldout) {
+
         }
+
+        res.send('buyProduct api success');
     }
 
     refundProduct(req, res) {
@@ -19,7 +21,9 @@ export class ProductController {
         const isSoldout = productService.checkSoldout();
 
         if (isSoldout) {
-            res.send('refundProduct api success');
+
         }
+
+        res.send('refundProduct api success');
     };
 }

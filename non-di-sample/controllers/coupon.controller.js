@@ -5,8 +5,10 @@ export class CouponController {
         const cashService = new CashService();
         const hasMoney = cashService.checkValue();
 
-        if(hasMoney){
-            res.send("buyCoupon api success");
+        if (hasMoney) {
+
         }
+
+        res.send("buyCoupon api success");
     }
 }
